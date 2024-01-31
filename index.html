@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Guerra Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="imgl" src="./assets/lucas-cropped.png" alt="Lucas Guerra picture" />
+      </div>
+      <div class="section__text">
+        <h1 class="title lucas">Lucas Guerra</h1>
+        <p class="section__text__p2">Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Lucas_Guerra_CV_2024.pdf')"
+          >
+            Download CV
+          </button>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin_green.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/lucas-guerra-66a40a238/'"
+            />
+            <img
+              src="./assets/github_green.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/lumguerra'"
+            />
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/green-computer-1552038.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container">
+              <img
+                src="./assets/experience_green.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Information Systems</h3>
+              <p>B.Sc. Bachelors Degree<br />Started in 2023 - Completion in 2026</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience_green.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Computer Maintence and Repair
+              </h3>
+              <p>Certificate<br />2016</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Developer with a passion for crafting exceptional user experiences. Currently pursuing a Bachelor of Science in Information Systems at Uninove College, I'm dedicated to honing my programming skills and staying on top of the ever-evolving tech industry. My relentless commitment to learning drives me to deliver innovative solutions that meet the demands of our technology-driven world.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Portfolio</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/screenshots/QA.png"
+                alt="Vector Search QA App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Vector Search QA App</h2>
+            <p>By leveraging MongoDB Atlas for vector storage, Langchain for connecting a language model to contextual sources, the OpenAI API for advanced language processing, and Gradio for user-friendly web interface interaction, this application stands out in its ability to provide precise, context-aware answers to user queries on uploaded documents.<br><br></p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lumguerra/Vector_Search_QA_Web_App'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lumguerra/Vector_Search_QA_Web_App'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/screenshots/EQ.png"
+                alt="Audio EQ VST3 Plugin"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Audio EQ VST3 Plugin</h2>
+            <p>VST_EQ_Plugin is an audio equalizer VST3 plugin designed for use within a Digital Audio Workstations (DAW). Utilizing the JUCE framework, and developed using modern C++ techniques, this plugin provides equalization features (Low-cut and High-cut filters and a peak-frequency selector with Q ajustment) allowing users to adjust audio frequencies for better sound quality in their projects.<br><br></p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lumguerra/VST_EQ_Plugin-1.0-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtube.com/shorts/GoW8Ffr7S5g?feature=share'"
+              >
+                Video Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/screenshots/comanda.png"
+                alt="Restaurant Menu Page"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Restaurant Menu Page</h2>
+            <p>Comanda is a restaurant menu app showcasing a responsive design, ensuring seamless usability across various devices. This app exhibits a clean and modern user interface, crafted using HTML, CSS, JavaScript and TypeSript, enhanced by the robust Angular framework. This page layout has been developed to serve as a template for the Devbus software-house.<br><br></p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lumguerra/comanda_virtual'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">lucasmazoniguerra@gmail.com</a></p>
+          
+        </div>
+        <div class="contact-info-container">        
+        </div>        
+      </div>
+      <p class="phone">+55 (11)999423291</p>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
